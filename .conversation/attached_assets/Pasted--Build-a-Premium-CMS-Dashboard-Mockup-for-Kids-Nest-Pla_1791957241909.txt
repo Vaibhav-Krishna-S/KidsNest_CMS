@@ -1,0 +1,409 @@
+# Build a Premium CMS Dashboard Mockup for Kids Nest Play School
+
+## Project context
+
+I am the founder of ZETHICA, a digital studio. We have successfully delivered the new Kids Nest Play School website in Coimbatore, India.
+
+Live website: https://kidsnestcoimbatore.in
+
+The website is live, and its basic SEO setup is complete. The site is appearing in Google Search and Google Maps.
+
+Now I want to present the client with a **premium, interactive mockup of a Content Management System (CMS)** that allows school management to update website photographs, organize gallery content, and manage school events without needing a developer for every small update.
+
+This is a client-facing product demonstration, not a generic admin dashboard.
+
+## 1. Primary objective
+
+Build a polished, responsive, interactive dashboard prototype that demonstrates how Kids Nest management could:
+
+- Log in to a secure management dashboard.
+- View a simple overview of website content.
+- Upload and manage school photographs.
+- Organize gallery photographs into categories.
+- Add captions and edit photo details.
+- Delete photographs with confirmation.
+- Create, edit, publish and remove school events.
+- Preview content before publishing.
+- See a simulated confirmation when content is published.
+- Manage everything from a desktop, tablet or mobile phone.
+
+The goal is to make school management immediately understand the value of the CMS and feel confident about purchasing it from ZETHICA.
+
+**Important:** This is a demonstration mockup. Do not connect it to the live Kids Nest website, production database, authentication provider, or real storage. Simulate the interactions using realistic sample data and client-side state. Clearly label the prototype as a demo so nobody mistakes simulated publishing for a real website update.
+
+## 2. Brand identity and visual direction
+
+Use the existing Kids Nest website as the primary visual reference:
+
+https://kidsnestcoimbatore.in
+
+Open and inspect the website before designing the dashboard. Preserve its visual identity while adapting it for a professional administrative interface.
+
+Brand palette:
+- Navy: #203047
+- Teal: #18A7B8
+- Sunshine yellow: #FFD45A
+- Coral: #FF806B
+- Mint: #BFE8D8
+- Sky blue: #C9EEF5
+- Lavender: #DDD2F4
+- Cream: #FFF9ED
+- White: #FFFFFF
+
+Typography:
+- Use the website's editorial serif style sparingly for welcome headings, if appropriate.
+- Use a clean, modern sans-serif for dashboard labels, forms, tables and navigation.
+- Prioritize readability and ease of use.
+
+Design characteristics:
+- Premium, warm, friendly and professional.
+- Rounded corners, subtle borders, restrained shadows and generous spacing.
+- Colorful pastel accents used selectively.
+- Excellent contrast and clear information hierarchy.
+- Consistent buttons, form fields, icons and modal dialogs.
+- A real SaaS product aesthetic, not a children's game or a generic AI-generated admin template.
+
+Use the official Kids Nest logo if it can be obtained from the live website. Use the ZETHICA logo only as subtle developer attribution in the footer or About section. Do not redraw either logo.
+
+## 3. Application layout
+
+Create a complete dashboard application with:
+
+### Desktop
+- Fixed or collapsible left sidebar.
+- Main content area.
+- Top bar with page title, search or quick actions where useful, notification icon and management profile.
+- Responsive content grids.
+- Clear primary action on every relevant page.
+
+### Mobile
+- Compact header.
+- Collapsible navigation drawer.
+- Touch-friendly controls.
+- Gallery cards and event forms adapted to narrow screens.
+- No horizontal overflow.
+- Easy access to Add Photos and Add Event.
+
+Use the same design system throughout the application.
+
+## 4. Create these screens
+
+### Screen A — Login
+
+Create a polished login screen branded for Kids Nest management.
+
+Include:
+- Kids Nest logo.
+- Heading: “Welcome back”
+- Supporting text: “Manage your school's website, gallery and events in one place.”
+- Email field.
+- Password field with show/hide toggle.
+- Remember me checkbox.
+- Sign In button.
+- A small, visible “Demo Preview” indicator.
+
+Since this is a mockup, use a simulated login flow. A demo login button can enter the dashboard without requiring real credentials. Do not store passwords or implement real authentication.
+
+### Screen B — Dashboard overview
+
+After entering the demo, show a welcoming overview.
+
+Heading:
+“Good morning, Kids Nest team!”
+
+Supporting text:
+“Here's what's happening with your website.”
+
+Include overview cards for:
+- Total gallery photos.
+- Published events.
+- Upcoming events.
+- Draft content.
+
+Use believable sample numbers, clearly treated as demo data.
+
+Add a “Quick Actions” section:
+- Upload Photos
+- Add New Event
+- Manage Gallery
+- Preview Website
+
+Add a “Recent Activity” section with realistic example entries:
+- New photos added to Classroom Activities.
+- Annual Day event details updated.
+- A gallery caption edited.
+
+Add an “Upcoming Events” panel with sample school events such as Annual Day, Sports Day and a school celebration. These are demonstration examples, not claims about actual scheduled events.
+
+Include a prominent shortcut to the live Kids Nest website.
+
+### Screen C — Gallery management
+
+This is the most important screen. Make it visually impressive and easy to understand.
+
+Heading:
+“Gallery Management”
+
+Description:
+“Keep parents connected to the wonderful moments happening at Kids Nest.”
+
+Include:
+- Add Photos button.
+- Search photos.
+- Category filter.
+- Published/Draft filter.
+- Grid/list view toggle.
+- Photo count.
+- Sort by newest or oldest.
+
+Create a visually appealing image grid using suitable preschool/classroom/activity images. Use royalty-free or safe placeholder imagery. Do not use identifiable real children from the internet or expose any personal information.
+
+Each photo card should include:
+- Image thumbnail.
+- Editable caption.
+- Category.
+- Publication status.
+- Edit action.
+- Delete action.
+- Optional selection checkbox.
+
+Use example categories:
+- Classroom Activities
+- Art & Craft
+- Celebrations
+- Outdoor Play
+- Campus
+- Learning Activities
+
+#### Add Photos interaction
+
+When the user clicks Add Photos, open a polished upload interface.
+
+Include:
+- Drag-and-drop upload area.
+- File selection control.
+- Multiple photo selection.
+- Image previews.
+- Caption fields.
+- Category selection.
+- Publish/Draft option.
+- Cancel and Add Photos buttons.
+
+In this demo, selected local images can be previewed and added to client-side state. If local file previews are unavailable, provide a graceful demo fallback. Do not upload files to an external server.
+
+After adding photos, show a success toast and update the displayed photo count and gallery grid.
+
+#### Edit and delete interactions
+
+- Edit opens a modal or side panel.
+- Changes should update the displayed card.
+- Delete opens a confirmation dialog.
+- Confirming deletion removes the item from the demo state.
+- Cancelling leaves the gallery unchanged.
+
+Add realistic empty states and loading feedback where appropriate.
+
+### Screen D — Event management
+
+Heading:
+“Event Management”
+
+Description:
+“Keep school events organized and parents informed.”
+
+Provide:
+- Add Event button.
+- Upcoming / Past / Draft filters.
+- Search.
+- Event cards or a clean table.
+- Date, title, category and status.
+
+Use clearly marked demonstration events:
+- Annual Day
+- Sports Day
+- Art & Craft Exhibition
+- Festival Celebration
+
+Each event should have:
+- Event title.
+- Date.
+- Start time.
+- Description.
+- Optional cover image.
+- Status: Draft or Published.
+
+#### Add/Edit Event flow
+
+Create a polished form or modal containing:
+- Event title.
+- Event date.
+- Start time.
+- Description.
+- Category.
+- Optional cover image.
+- Save as Draft.
+- Publish Event.
+
+Validate required fields and prevent invalid dates.
+
+When the user saves or publishes an event, update the interface and show a confirmation toast. Editing and deleting events must also work in the demo.
+
+Create a clear distinction between upcoming events and past events.
+
+### Screen E — Website preview
+
+Create a preview screen showing how the published gallery and events might appear on the actual Kids Nest website.
+
+Use the live site's visual language:
+- Cream backgrounds.
+- Navy headings.
+- Teal accents.
+- Coral and yellow highlights.
+- Rounded image cards.
+- Friendly, premium preschool aesthetic.
+
+Include:
+- Gallery preview.
+- Upcoming events preview.
+- Desktop/mobile preview toggle if practical.
+- Back to Dashboard button.
+
+Include a clear notice:
+“This is a demonstration preview. Changes made here are not connected to the live website.”
+
+Do not claim that the actual live website has been updated.
+
+### Screen F — Settings and account
+
+Create a lightweight settings screen with:
+- School profile preview.
+- Management account details.
+- Profile editing interface.
+- Change password UI (visual only).
+- Sign out action.
+- Demo mode notice.
+
+Use only fictional/demo account details. Do not invent or expose real credentials.
+
+### Screen G — Complete plan preview
+
+The proposed Complete CMS plan includes teacher information, teacher photographs, announcements and website notices.
+
+Add these as visually polished navigation entries, but mark them clearly as “Complete Plan” features or “Upgrade to Complete” in the prototype.
+
+When clicked, show a professional preview explaining what that module would offer. Do not make it appear that these modules are already included in the Professional plan.
+
+## 5. Navigation
+
+Use a clear sidebar with:
+
+- Overview
+- Gallery
+- Events
+- Website Preview
+- Teachers — Complete Plan
+- Announcements — Complete Plan
+- Settings
+- Visit Live Website
+
+The “Visit Live Website” link must open:
+
+https://kidsnestcoimbatore.in
+
+Use proper active states, hover states and mobile navigation behavior.
+
+All navigation items and advertised actions must work within the mockup.
+
+## 6. Recommended plan positioning
+
+The dashboard should primarily demonstrate the Professional CMS plan:
+
+**Professional — ₹10,999**
+
+Includes:
+- Full gallery management.
+- Multiple photo uploads.
+- Categories and captions.
+- Create/edit/remove school events.
+- Event dates, times and descriptions.
+- Secure management login in the eventual production implementation.
+- Mobile-friendly dashboard.
+- Website integration.
+
+The Professional plan is the recommended option because it provides the two core capabilities the school is likely to need regularly: gallery and event management.
+
+The other proposal tiers are:
+
+- Essential — ₹6,999: gallery management.
+- Professional — ₹10,999: gallery and events.
+- Complete — ₹14,999: Professional features plus teacher information/photos, announcements and website notices.
+
+Show the pricing only where useful, such as an optional “Plan & Features” screen. Do not turn the dashboard into a sales landing page. The core experience should feel like a real product.
+
+## 7. Interaction and implementation requirements
+
+Use a modern, maintainable frontend stack supported by Lovable.
+
+Prefer:
+- React.
+- TypeScript.
+- Tailwind CSS or an equivalent consistent styling system.
+- Reusable components.
+- Lucide icons.
+- Client-side state for simulated CRUD actions.
+- Local image previews where feasible.
+
+Do not add a real backend, database, Supabase project, production authentication, external storage, paid services or API keys for this mockup.
+
+Implement actual prototype interactions for:
+- Demo login.
+- Navigation.
+- Gallery filtering and searching.
+- Add/edit/delete photo metadata.
+- Add/edit/delete events.
+- Form validation.
+- Draft/publish status.
+- Confirmation dialogs.
+- Toast notifications.
+- Dashboard counts derived from demo state.
+- Responsive sidebar/drawer.
+- Website preview.
+
+Do not use inert buttons or create controls that imply functionality without implementing it.
+
+## 8. Quality and accessibility
+
+- Fully responsive across desktop, tablet and mobile.
+- Consistent spacing and typography.
+- Keyboard-accessible controls.
+- Visible focus states.
+- Semantic headings and labels.
+- Accessible dialog behavior.
+- Appropriate color contrast.
+- No broken images.
+- No console errors.
+- No horizontal scrolling.
+- Graceful empty states.
+- No fabricated school testimonials, achievements, ratings or sensitive student data.
+
+Avoid overusing charts, gradients, emojis, excessive animations or unnecessary dashboard widgets.
+
+## 9. Final deliverable
+
+Produce a polished, interactive, client-ready CMS mockup that ZETHICA can share with Kids Nest management.
+
+Before finishing:
+1. Test the full demo flow from login to dashboard.
+2. Test adding and editing photos.
+3. Test adding and editing events.
+4. Test search and category filters.
+5. Test mobile navigation and responsive layouts.
+6. Verify all buttons work.
+7. Verify the live website link opens correctly.
+8. Ensure every simulated action is clearly distinguishable from a real production update.
+
+The final experience should communicate one simple message:
+
+“Your website. Your content. Your control.”
+
+Prioritize excellent visual design, simplicity and trust. The school management team should feel that they can use this dashboard confidently without technical knowledge.

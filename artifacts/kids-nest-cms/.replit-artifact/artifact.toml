@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Kids Nest CMS Demo"
+description = "A responsive, client-facing CMS prototype for Kids Nest Play School that demonstrates safe demo login, gallery and event management, website previews, and settings using client-side sample state only."
+version = "1.0.0"
+id = "artifacts/kids-nest-cms"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25977
+
+[services.development]
+run = "pnpm --filter @workspace/kids-nest-cms run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/kids-nest-cms", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/kids-nest-cms/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25977"
+BASE_PATH = "/"
